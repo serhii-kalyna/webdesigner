@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEBDESIGNER</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/movingboxes.css">
+	<link rel="stylesheet" href="demo/demo.css">
+
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="js/jquery.movingboxes.js"></script>
+
+	<style>
+		#slider { width: 850px; height: 396px!important;}
+		#slider li { width: 325px; padding-right: 0!important; padding-left: 0!important;}
+	</style>
+
+	<script>
+		$(function(){
+
+			$('#slider').movingBoxes({
+
+				startPanel   : 2,
+				wrap         : false,
+				buildNav     : true,
+				navFormatter : function(){ return "&#9679;"; }
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="header">
+
+			<div id="logo">
+				<p>endless inspiration and daily resources..</p>
+				<img src="images/logo.png" alt="">
+			</div>
+
+			<div id="block-search">
+
+				<form action="" method="">
+					<input type="text" name="search" class="search-input" placeholder="Type your search here..">
+					<input type="submit" class="search-btn" value="">
+				</form>
+				<img class="search-loop" src="images/loop.png" alt="">
+
+			</div>
+
+			<div id="header-navigation">
+				
+				<ul>
+					<li><a href="">Home</a></li>
+					<li class="active"><a href="">Portfolio</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Testimonials</a></li>
+					<li><a href="">Contacts</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+
+			</div>
+
+			<img src="images/header-bg.jpg" alt="">
+		</div>
+
+		<div id="main">
+
+			<div id="block-slider">
+
+
+				<img src="images/slider-bg.png" alt="" class="slider-bg">
+				<img src="images/slider-btn-bg.png" alt="" class="btns-bg">
+
+				<div id="block-btns">
+					<ul>
+						<li><a href="">Typography</a></li>
+						<li><a href="">Wallpapers</a></li>
+						<li class="active"><a href="">Web Interfaces</a></li>
+						<li><a href="">Logotypes</a></li>
+					</ul>
+				</div>
+
+				<div id="wrapper">
+
+					<ul id="slider">
+
+						<li><img src="projects/1.png" alt="picture"></li>
+						<li><img src="projects/2.png" alt="picture"></li>
+						<li><img src="projects/3.png" alt="picture"></li>
+						<li><img src="projects/1.png" alt="picture"></li>
+						<li><img src="projects/2.png" alt="picture"></li>
+						<li><img src="projects/3.png" alt="picture"></li>
+						<li><img src="projects/1.png" alt="picture"></li>
+						<li><img src="projects/2.png" alt="picture"></li>
+						<li><img src="projects/3.png" alt="picture"></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<img class="main-bg" src="images/main-bg.jpg" alt="">
+
+			<div id="content">
+
+				<!-- <img class="top-shadow" src="images/content-top-shadow.png" alt=""> -->
+				<div class="top-shadow"></div>
+
+				<ul>
+					<li class="active"><a href="">
+						<img class="btn" src="images/btn1.png" alt="">
+						<img class="icon-btn" src="images/icon-btn1.png" alt="">
+						<h5>EXPERIENCE</h5>
+						<p>professionals working together</p>
+					</a></li>
+
+					<li><a href="">
+						<img class="btn" src="images/btn2.png" alt="">
+						<img class="icon-btn" src="images/icon-btn2.png" alt="">
+						<h5>TECHNOLOGIES</h5>
+						<p>we use only the best stuff</p>
+					</a></li>
+
+					<li><a href="">
+						<img class="btn" src="images/btn2.png" alt="">
+						<img class="icon-btn" src="images/icon-btn3.png" alt="">
+						<h5>SUPPORT</h5>
+						<p>24/7 user satisfaction</p>
+					</a></li>
+				</ul>	
+
+				<div id="left-block">
+
+					<ul>
+						<li>
+							<img class="btn" src="images/main-btn.png" alt="">
+							<img class="check" src="images/check-icon.png" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<a href=""><img class="read-btn" src="images/read-more-btn.png" alt=""><span>Read more</span></a>
+						</li>
+
+						<li>
+							<img class="btn" src="images/main-btn.png" alt="">
+							<img class="check" src="images/check-icon.png" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<a href=""><img class="read-btn" src="images/read-more-btn.png" alt=""><span>Read more</span></a>
+						</li>
+
+						<li>
+							<img class="btn" src="images/main-btn.png" alt="">
+							<img class="check" src="images/check-icon.png" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<a href=""><img class="read-btn" src="images/read-more-btn.png" alt=""><span>Read more</span></a>
+						</li>
+
+						<li>
+							<img class="btn" src="images/main-btn.png" alt="">
+							<img class="check" src="images/check-icon.png" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<a href=""><img class="read-btn" src="images/read-more-btn.png" alt=""><span>Read more</span></a>
+						</li>
+					</ul>
+					
+				</div>
+
+				<div id="right-block">
+					<img class="tw-bg" src="images/tw-bg.png" alt="">
+					<img class="tw-title" src="images/tw-title.png" alt="">
+					<h4>Team Works</h4>
+
+					<ul>
+						<li><a href=""><img src="images/tw-btn.png" alt=""><img class="tw-icon" src="images/tw-icon1.png" alt=""></a></li>
+						<li><a href=""><img src="images/tw-btn.png" alt=""><img class="tw-icon" src="images/tw-icon2.png" alt=""></a></li>
+						<li><a href=""><img src="images/tw-btn.png" alt=""><img class="tw-icon" src="images/tw-icon3.png" alt=""></a></li>
+						<li><a href=""><img src="images/tw-btn.png" alt=""><img class="tw-icon" src="images/tw-icon4.png" alt=""></a></li>
+						<li><a href=""><img src="images/tw-btn.png" alt=""><img class="tw-icon" src="images/tw-icon5.png" alt=""></a></li>
+						<li><a href=""><img src="images/tw-btn.png" alt=""><img class="tw-icon" src="images/tw-icon6.png" alt=""></a></li>
+					</ul>
+
+				</div>
+
+				<img class="down-shadow" src="images/content-down-shadow.png" alt="">
+
+				<div id="block-comment">
+					<img class="comment-block" src="images/block-comment-bg.png" alt="">
+					<img class="user" src="images/user-icon.png" alt="">
+					<img class="comment" src="images/comment-bg.png" alt="">
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut sapien non ligula mattis elementum laoreet et metus. Pellentesque placerat rutrum magna, a viverra metus aliquam et. Vestibulum sit amet laoreet sapien. Pellentesque id mauris volutpat felis facilisis sollicitudin ut ut mauris. Mauris scelerisque turpis at eros vulputate blandit. Integer nec viverra nibh. Cras luctus nibh sit amet nunc congue vitae iaculis libero elementum.</p>
+					<h5>by Kevin Stevens</h5>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="footer">
+			
+			<img class="footer-bg" src="images/footer-bg.jpg" alt="">
+			<img class="footer-book" src="images/book-icon.png" alt="">
+			<img class="footer-line" src="images/footer-line.png" alt="">
+			<h4>Latest News On Blog</h4>
+
+			<div id="block-left">
+				<img class="footer-group" src="images/footer-group.png" alt="">
+				<h5 class="caption">10 Tips For Better SEO Optimization</h5>
+				<p>In semper sodales felis, eu egestas nisi dignissim quis. Mauris vitae eros elit, vitae egestas magna. Donec ac mi lorem. Ut arcu dui, eleifend vel auctor a, tincidunt eu tortor.</p>
+				<img class="comment-ico" src="images/comment-icon.png" alt="">
+				<span class="count-comment">14 comments</span>
+				<img class="read-more-footer" src="images/read-more-footer.png" alt="">
+				<a class="name-btn" href="">Read more</a>
+			</div>
+
+			<div id="block-right">
+				<img class="footer-group" src="images/footer-group.png" alt="">
+				<h5 class="caption">30 Wordpress Plugins To Improve Sidebar</h5>
+				<p>In semper sodales felis, eu egestas nisi dignissim quis. Mauris vitae eros elit, vitae egestas magna. Donec ac mi lorem. Ut arcu dui, eleifend vel auctor a, tincidunt eu tortor.</p>
+				<img class="comment-ico" src="images/comment-icon.png" alt="">
+				<span class="count-comment">16 comments</span>
+				<img class="read-more-footer" src="images/read-more-footer.png" alt="">
+				<a class="name-btn" href="">Read more</a>
+			</div>
+
+			<div id="block-copyright">
+				<img src="images/copy-bg.png" alt="">
+
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Portfolio</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Testimonials</a></li>
+					<li><a href="">Contacts</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+
+				<p class="copyright">Copyright<!-- &copy; -->&emsp;&ensp;&nbsp;2009 by Dainis Graveris.</p>
+				<img class="copy-icon" src="images/copy-icon.png" alt="">
+
+			</div>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>
